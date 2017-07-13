@@ -14,6 +14,12 @@
 		534EDD941F15EB2E00518D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534EDD931F15EB2E00518D0F /* Assets.xcassets */; };
 		534EDD971F15EB2E00518D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534EDD951F15EB2E00518D0F /* LaunchScreen.storyboard */; };
 		534EDDA21F15EB2E00518D0F /* FirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EDDA11F15EB2E00518D0F /* FirstAppTests.swift */; };
+		534EDDB01F161F0400518D0F /* ListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EDDAF1F161F0400518D0F /* ListItemViewController.swift */; };
+		534EDDB31F16225200518D0F /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EDDB21F16225200518D0F /* ContactTableViewCell.swift */; };
+		534EDDB51F16397500518D0F /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EDDB41F16397500518D0F /* Contact.swift */; };
+		53C55EA11F1761130048BD67 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C55EA01F1761130048BD67 /* RegisterViewController.swift */; };
+		53C55EA41F1775290048BD67 /* AppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53C55EA21F1775290048BD67 /* AppModel.xcdatamodeld */; };
+		53C55EA61F17A4CB0048BD67 /* AlertViewMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C55EA51F17A4CB0048BD67 /* AlertViewMController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		534EDD9D1F15EB2E00518D0F /* FirstAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		534EDDA11F15EB2E00518D0F /* FirstAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppTests.swift; sourceTree = "<group>"; };
 		534EDDA31F15EB2E00518D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		534EDDAF1F161F0400518D0F /* ListItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemViewController.swift; sourceTree = "<group>"; };
+		534EDDB21F16225200518D0F /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		534EDDB41F16397500518D0F /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		53C55EA01F1761130048BD67 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		53C55EA31F1775290048BD67 /* AppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppModel.xcdatamodel; sourceTree = "<group>"; };
+		53C55EA51F17A4CB0048BD67 /* AlertViewMController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewMController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 		534EDD7D1F15EB2E00518D0F = {
 			isa = PBXGroup;
 			children = (
+				53C55EA21F1775290048BD67 /* AppModel.xcdatamodeld */,
 				534EDD881F15EB2E00518D0F /* FirstApp */,
 				534EDDA01F15EB2E00518D0F /* FirstAppTests */,
 				534EDD871F15EB2E00518D0F /* Products */,
@@ -79,6 +92,10 @@
 		534EDD881F15EB2E00518D0F /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				53C55E991F1747C00048BD67 /* widgets */,
+				534EDDB61F16399400518D0F /* models */,
+				534EDDB11F16223100518D0F /* adapters */,
+				534EDDAC1F1607E600518D0F /* ui */,
 				534EDD891F15EB2E00518D0F /* AppDelegate.swift */,
 				534EDD8B1F15EB2E00518D0F /* ViewController.swift */,
 				534EDD8D1F15EB2E00518D0F /* Main.storyboard */,
@@ -97,6 +114,39 @@
 				534EDDA31F15EB2E00518D0F /* Info.plist */,
 			);
 			path = FirstAppTests;
+			sourceTree = "<group>";
+		};
+		534EDDAC1F1607E600518D0F /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				534EDDAF1F161F0400518D0F /* ListItemViewController.swift */,
+				53C55EA01F1761130048BD67 /* RegisterViewController.swift */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		534EDDB11F16223100518D0F /* adapters */ = {
+			isa = PBXGroup;
+			children = (
+				534EDDB21F16225200518D0F /* ContactTableViewCell.swift */,
+			);
+			name = adapters;
+			sourceTree = "<group>";
+		};
+		534EDDB61F16399400518D0F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				534EDDB41F16397500518D0F /* Contact.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		53C55E991F1747C00048BD67 /* widgets */ = {
+			isa = PBXGroup;
+			children = (
+				53C55EA51F17A4CB0048BD67 /* AlertViewMController.swift */,
+			);
+			name = widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +252,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534EDDB51F16397500518D0F /* Contact.swift in Sources */,
 				534EDD921F15EB2E00518D0F /* FirstApp.xcdatamodeld in Sources */,
+				53C55EA11F1761130048BD67 /* RegisterViewController.swift in Sources */,
+				534EDDB31F16225200518D0F /* ContactTableViewCell.swift in Sources */,
+				53C55EA61F17A4CB0048BD67 /* AlertViewMController.swift in Sources */,
 				534EDD8C1F15EB2E00518D0F /* ViewController.swift in Sources */,
+				534EDDB01F161F0400518D0F /* ListItemViewController.swift in Sources */,
 				534EDD8A1F15EB2E00518D0F /* AppDelegate.swift in Sources */,
+				53C55EA41F1775290048BD67 /* AppModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +468,7 @@
 				534EDDA81F15EB2E00518D0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		534EDDA91F15EB2E00518D0F /* Build configuration list for PBXNativeTarget "FirstAppTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +477,7 @@
 				534EDDAB1F15EB2E00518D0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -431,6 +489,16 @@
 			);
 			currentVersion = 534EDD911F15EB2E00518D0F /* FirstApp.xcdatamodel */;
 			path = FirstApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		53C55EA21F1775290048BD67 /* AppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				53C55EA31F1775290048BD67 /* AppModel.xcdatamodel */,
+			);
+			currentVersion = 53C55EA31F1775290048BD67 /* AppModel.xcdatamodel */;
+			path = AppModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
